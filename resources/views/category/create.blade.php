@@ -21,19 +21,11 @@
 
 
                 @endif
-                <form action="{{route('post.store')}}" method="POST" enctype="multipart/form-data">
+                <form action="{{route('category.store')}}" method="POST" enctype="multipart/form-data">
                 {{csrf_field()}}
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" class="form-control" name="title"  placeholder="Enter Post Title">
-                    </div>
-                    <div class="form-group">
-                        <label for="content">Description</label>
-                        <textarea class="form-control" name="content" rows="3"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="photo">upload photo</label>
-                        <input type="file" class="form-control-file" name="photo">
+                        <input type="text" class="form-control" name="name"  placeholder="Enter Category Title">
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -43,3 +35,13 @@
     </div>
 </div>
 @endsection
+
+
+
+
+
+
+
+
+
+

@@ -27,7 +27,7 @@
                 &nbsp;                &nbsp;
                 &nbsp;
 
-                <a class="" href="{{route('category.edit',['id' =>$record->id])}}">
+                <a class="" href="{{route('category.delete',['id' =>$record->id])}}">
                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                 <i class="fa fa-trash"></i>
                 </a>
